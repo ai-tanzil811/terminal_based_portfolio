@@ -18,5 +18,5 @@ def main() -> int:
         )
         return 1
 
-    script = Path(__file__).with_name("tanzil.sh")
+    script = Path(__file__).parent.parent / "tanzil.sh"
     return subprocess.call([bash, os.fspath(script)])

@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "tanzil"
 version = "1.0.0"
 description = "Ashraful Islam Tanzil's interactive terminal portfolio"
-readme = "PYPI_README.md"
+readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
@@ -21,11 +21,11 @@ classifiers = [
 ]
 
 [project.scripts]
-tanzil = "tanzil.cli:main"
+tanzil = "my_package.main_code:main"
 
 [tool.setuptools]
-packages = ["tanzil"]
+packages = ["my_package"]
 include-package-data = true
 
 [tool.setuptools.package-data]
-tanzil = ["tanzil.sh"]
+my_package = ["../tanzil.sh"]
