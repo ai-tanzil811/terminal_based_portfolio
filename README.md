@@ -89,13 +89,7 @@ tanzil/
 └── pyproject.toml
 ```
 
-## Build
 
-Run these commands from the directory containing `pyproject.toml`:
-
-```powershell
-cd D:\Downloads\terminal_based_portfolio\tanzil
-```
 
 ```bash
 python -m pip install --upgrade build
