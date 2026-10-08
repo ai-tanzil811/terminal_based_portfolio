@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tanzil"
+version = "1.0.0"
+description = "Ashraful Islam Tanzil's interactive terminal portfolio"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "Ashraful Islam Tanzil"}
+]
+classifiers = [
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Terminals",
+]
+
+[project.scripts]
+tanzil = "my_package.main_code:main"
+
+[tool.setuptools]
+packages = ["my_package"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+my_package = ["../tanzil.sh"]
