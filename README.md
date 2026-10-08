@@ -1,0 +1,116 @@
+# AI Tanzil — Terminal Portfolio
+
+An interactive, dependency-free terminal portfolio for **Ashraful Islam Tanzil**,
+rewritten in Python from the original Tanzil Bash portfolio.
+
+```
+   █████╗ ██╗    ████████╗ █████╗ ███╗   ██╗███████╗██╗██╗
+  ██╔══██╗██║    ╚══██╔══╝██╔══██╗████╗  ██║╚══███╔╝██║██║
+  ███████║██║       ██║   ███████║██╔██╗ ██║  ███╔╝ ██║██║
+  ██╔══██║██║       ██║   ██╔══██║██║╚██╗██║ ███╔╝  ██║██║
+  ██║  ██║██║       ██║   ██║  ██║██║ ╚████║███████╗██║███████╗
+  ╚═╝  ╚═╝╚═╝       ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝╚══════╝
+```
+
+## Features
+
+- Portfolio pages: **About**, **Projects**, **Skills**, **Contact**
+- Terminal hyperlinks (OSC 8) with visible URL fallbacks for unsupported terminals
+- Five mini-games: Guess the Number, Tic-Tac-Toe, Rock Paper Scissors, Hangman, Dice Roller
+- Typewriter animation and ANSI colors are enabled by default
+- Respects the [`NO_COLOR`](https://no-color.org/) environment variable
+- `--no-color` and `--no-animation` CLI flags
+- Zero third-party runtime dependencies
+
+## Install
+
+```bash
+pip install tanzil
+tanzil
+```
+
+Or, for development:
+
+```bash
+git clone https://github.com/ai-tanzil811/PORTFOLIO2.git
+cd PORTFOLIO2
+python -m pip install -e .
+tanzil
+```
+
+## Usage
+
+```bash
+tanzil                     # normal launch
+tanzil --no-animation      # skip the typewriter effect
+tanzil --no-color          # plain output, no ANSI escapes
+tanzil --help              # show all options
+```
+
+You can also run the module directly without installing:
+
+```bash
+python -m my_package.main
+```
+
+### Environment variables
+
+| Variable                | Effect                                |
+| ----------------------- | ------------------------------------- |
+| `NO_COLOR`              | Disables ANSI colors (any value)      |
+| `TANZIL_NO_ANIMATION=1` | Disables the typewriter effect        |
+
+On Windows (PowerShell):
+
+```powershell
+$env:TANZIL_NO_ANIMATION = "1"
+tanzil
+```
+
+Use `tanzil --no-color` or `tanzil --no-animation` when plain or immediate
+output is needed.
+
+## Controls
+
+- Type a menu number to select an option.
+- Press `q`, `quit`, or `exit` to go back or quit.
+- After a game, press `r` to replay, `m` to return to the games menu, or `q` for the main menu.
+
+## Project layout
+
+```text
+tanzil/
+├── src/
+│   └── my_package/
+│       ├── __init__.py
+│       └── main.py
+├── LICENSE
+├── README.md
+└── pyproject.toml
+```
+
+## Build
+
+Run these commands from the directory containing `pyproject.toml`:
+
+```powershell
+cd D:\Downloads\terminal_based_portfolio\tanzil
+```
+
+```bash
+python -m pip install --upgrade build
+python -m build
+```
+
+Produces a wheel and sdist under `dist/`. Requires Python 3.10 or newer.
+
+## Links
+
+- Portfolio: <https://ai-tanzil811.github.io/PORTFOLIO2/>
+- GitHub: <https://github.com/ai-tanzil811>
+- LinkedIn: <https://www.linkedin.com/in/ai-tanzil/>
+- Email: <ahmedtanzil174@gmail.com>
+
+## License
+
+MIT — see [LICENSE](LICENSE).

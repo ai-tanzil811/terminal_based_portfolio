@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/my_package/__init__.py
+src/my_package/main.py
+src/tanzil.egg-info/PKG-INFO
+src/tanzil.egg-info/SOURCES.txt
+src/tanzil.egg-info/dependency_links.txt
+src/tanzil.egg-info/entry_points.txt
+src/tanzil.egg-info/top_level.txt
