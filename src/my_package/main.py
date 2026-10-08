@@ -51,15 +51,11 @@ ME = Profile(
     handle="ai-tanzil811",
     tagline="CS undergraduate | AI & Cybersecurity | Bioinformatics Researcher",
     bio=(
-        "I am a computer science undergraduate with a strong interest in "
-        "artificial intelligence, cybersecurity, and bioinformatics. I have "
-        "worked on various projects, including the development of a multi-objective "
-        "Green AI decision support framework called GreenPEFT, which aims to "
-        "optimize AI models for energy efficiency and performance. I am passionate "
-        "about learning new technologies and applying them to solve real-world "
-        "problems. I am also an active contributor to open-source projects and enjoy "
-        "sharing my knowledge with the community through my portfolio and social media "
-        "channels."        
+        
+        "Computer Science undergraduate specializing in Green AI, computational biology, "
+        "and cybersecurity. Developer of GreenPEFT—an open-source framework for multi-objective "
+        "LLM efficiency optimization. Dedicated to bridging academic research with real-world "
+        "software solutions through open science and active community engagement."       
     ),
     email="ahmedtanzil174@gmail.com",
     github="https://github.com/ai-tanzil811",
