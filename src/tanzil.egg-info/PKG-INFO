@@ -11,8 +11,6 @@ Classifier: Programming Language :: Python :: 3
 Classifier: Topic :: Terminals
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
-License-File: LICENSE
-Dynamic: license-file
 
 # AI Tanzil — Terminal Portfolio
 
@@ -105,13 +103,7 @@ tanzil/
 └── pyproject.toml
 ```
 
-## Build
 
-Run these commands from the directory containing `pyproject.toml`:
-
-```powershell
-cd D:\Downloads\terminal_based_portfolio\tanzil
-```
 
 ```bash
 python -m pip install --upgrade build
